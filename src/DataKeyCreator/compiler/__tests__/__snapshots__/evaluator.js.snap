@@ -1,0 +1,41 @@
+exports[`Evaluator BinaryExpression: Identifier, Identifier 1`] = `
+Array [
+  50,
+]
+`;
+
+exports[`Evaluator BinaryExpression: Number 1`] = `
+Array [
+  5,
+]
+`;
+
+exports[`Evaluator BinaryExpression: Number, Identifier 1`] = `
+Array [
+  101,
+]
+`;
+
+exports[`Evaluator BinaryExpression: Paren  1`] = `
+Array [
+  5,
+]
+`;
+
+exports[`Evaluator BinaryExpression: Paren 2 1`] = `
+Array [
+  61.76470588235294,
+]
+`;
+
+exports[`Evaluator Identifier 1`] = `
+Array [
+  100,
+]
+`;
+
+exports[`Evaluator Number 1`] = `
+Array [
+  2,
+]
+`;

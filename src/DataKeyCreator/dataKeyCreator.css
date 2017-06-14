@@ -1,0 +1,8 @@
+.bt-data-key-creator{
+  .create-btn{
+    border: 1px solid #ddd;
+    padding: 4px 16px;
+    width: 120px;
+    text-align: center;
+  }
+}

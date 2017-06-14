@@ -1,0 +1,111 @@
+exports[`Compiler BinaryExpression: Identifier, Identifier 1`] = `
+Object {
+  "success": true,
+  "value": 0.02,
+}
+`;
+
+exports[`Compiler BinaryExpression: Number 1`] = `
+Object {
+  "success": true,
+  "value": 3,
+}
+`;
+
+exports[`Compiler BinaryExpression: Number, Identifier 1`] = `
+Object {
+  "success": true,
+  "value": 101,
+}
+`;
+
+exports[`Compiler Empty 1`] = `
+Object {
+  "err": "Expression is not valid",
+  "success": false,
+}
+`;
+
+exports[`Compiler Error Handlering: evaluator error 1`] = `
+Object {
+  "err": "Unknown identifier: aa",
+  "success": false,
+}
+`;
+
+exports[`Compiler Error Handlering: parser error 1`] = `
+Object {
+  "err": "Unmatched paren: it seems you lack a ) in expression",
+  "success": false,
+}
+`;
+
+exports[`Compiler Error Handlering: tokenizer error 1`] = `
+Object {
+  "err": "TypeError: Unable to parse character: &",
+  "success": false,
+}
+`;
+
+exports[`Compiler Error Handlering: tokenizer error 2 1`] = `
+Object {
+  "err": "Unexpected token: )",
+  "success": false,
+}
+`;
+
+exports[`Compiler Error Handlering: tokenizer error 3 1`] = `
+Object {
+  "err": "Expression is not valid",
+  "success": false,
+}
+`;
+
+exports[`Compiler Identifier 1`] = `
+Object {
+  "success": true,
+  "value": 100,
+}
+`;
+
+exports[`Compiler Number 1`] = `
+Object {
+  "success": true,
+  "value": 1,
+}
+`;
+
+exports[`Compiler Paren: Number 1`] = `
+Object {
+  "success": true,
+  "value": 3,
+}
+`;
+
+exports[`Compiler Paren: Number 2 1`] = `
+Object {
+  "success": true,
+  "value": 9,
+}
+`;
+
+exports[`Compiler Paren: Number, Identifier 1`] = `
+Object {
+  "success": true,
+  "value": 0.03,
+}
+`;
+
+exports[`Compiler Support Immutable 1`] = `
+Object {
+  "success": true,
+  "value": 0.03,
+}
+`;
+
+exports[`Compiler Support Immutable 2 1`] = `
+Object {
+  "success": true,
+  "value": 0.0375,
+}
+`;

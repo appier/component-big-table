@@ -1,0 +1,58 @@
+{
+  "name": "big-table",
+  "version": "1.0.0",
+  "description": "Big Table Component",
+  "main": "build/big-table.js",
+  "npmName": "big-table",
+  "scripts": {
+    "build:clean": "rm -rf lib example build",
+    "build": "npm run build:clean && webpack --config webpack.config.babel.js",
+    "storybook-build": "rm -rf ./build_storybook && build-storybook -o build_storybook",
+    "storybook-start": "start-storybook -p 9001",
+    "storybook-test": "storyshots",
+    "prepublish": "npm run build",
+    "start": "npm run storybook-start",
+    "test": "jest",
+    "jest:watch": "jest --watch",
+    "jest:cover": "jest --coverage"
+  },
+  "jest": {
+    "testPathDirs": [
+      "<rootDir>/src"
+    ],
+    "coverageReporters": [
+      "clover",
+      "cobertura",
+      "html"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.4.0",
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storyshots": "^2.1.0",
+    "autoprefixer": "^6.7.7",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "jest": "^19.0.2",
+    "postcss-loader": "^1.3.3",
+    "postcss-nested": "^1.0.0",
+    "react-dom": "^15.5.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "react": "^15.5.3"
+  }
+}

@@ -1,0 +1,237 @@
+exports[`Tokenizer identifier & number & operator 1`] = `
+Array [
+  Object {
+    "type": "identifier",
+    "value": "impression",
+  },
+  Object {
+    "type": "operator",
+    "value": "*",
+  },
+  Object {
+    "type": "number",
+    "value": "1000",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+  Object {
+    "type": "identifier",
+    "value": "cost",
+  },
+]
+`;
+
+exports[`Tokenizer identifier & operator 1`] = `
+Array [
+  Object {
+    "type": "identifier",
+    "value": "cost",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+  Object {
+    "type": "identifier",
+    "value": "action",
+  },
+]
+`;
+
+exports[`Tokenizer identifier & paren & number & identifier 1`] = `
+Array [
+  Object {
+    "type": "paren",
+    "value": "(",
+  },
+  Object {
+    "type": "identifier",
+    "value": "impression",
+  },
+  Object {
+    "type": "operator",
+    "value": "+",
+  },
+  Object {
+    "type": "identifier",
+    "value": "click",
+  },
+  Object {
+    "type": "paren",
+    "value": ")",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+  Object {
+    "type": "paren",
+    "value": "(",
+  },
+  Object {
+    "type": "identifier",
+    "value": "cost",
+  },
+  Object {
+    "type": "operator",
+    "value": "*",
+  },
+  Object {
+    "type": "number",
+    "value": "5",
+  },
+  Object {
+    "type": "paren",
+    "value": ")",
+  },
+]
+`;
+
+exports[`Tokenizer identifier 1`] = `
+Array [
+  Object {
+    "type": "identifier",
+    "value": "cost",
+  },
+]
+`;
+
+exports[`Tokenizer identifier with number 1`] = `
+Array [
+  Object {
+    "type": "identifier",
+    "value": "action1",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+  Object {
+    "type": "identifier",
+    "value": "action2",
+  },
+]
+`;
+
+exports[`Tokenizer number & operator 1`] = `
+Array [
+  Object {
+    "type": "number",
+    "value": "1",
+  },
+  Object {
+    "type": "operator",
+    "value": "+",
+  },
+  Object {
+    "type": "number",
+    "value": "2",
+  },
+  Object {
+    "type": "operator",
+    "value": "*",
+  },
+  Object {
+    "type": "number",
+    "value": "3",
+  },
+  Object {
+    "type": "operator",
+    "value": "-",
+  },
+  Object {
+    "type": "number",
+    "value": "4",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+  Object {
+    "type": "number",
+    "value": "5",
+  },
+]
+`;
+
+exports[`Tokenizer number 1`] = `
+Array [
+  Object {
+    "type": "number",
+    "value": "1",
+  },
+  Object {
+    "type": "number",
+    "value": "23",
+  },
+  Object {
+    "type": "number",
+    "value": "45",
+  },
+]
+`;
+
+exports[`Tokenizer operator 1`] = `
+Array [
+  Object {
+    "type": "operator",
+    "value": "+",
+  },
+  Object {
+    "type": "operator",
+    "value": "-",
+  },
+  Object {
+    "type": "operator",
+    "value": "*",
+  },
+  Object {
+    "type": "operator",
+    "value": "/",
+  },
+]
+`;
+
+exports[`Tokenizer operator: invalid 1 1`] = `"TypeError: illegal operator: ++"`;
+
+exports[`Tokenizer operator: invalid 2 1`] = `"TypeError: illegal operator: **"`;
+
+exports[`Tokenizer paren & identifier 1`] = `
+Array [
+  Object {
+    "type": "identifier",
+    "value": "cost",
+  },
+  Object {
+    "type": "paren",
+    "value": "(",
+  },
+  Object {
+    "type": "identifier",
+    "value": "action",
+  },
+  Object {
+    "type": "paren",
+    "value": ")",
+  },
+]
+`;
+
+exports[`Tokenizer paren 1`] = `
+Array [
+  Object {
+    "type": "paren",
+    "value": ")",
+  },
+  Object {
+    "type": "paren",
+    "value": "(",
+  },
+  Object {
+    "type": "paren",
+    "value": ")",
+  },
+]
+`;

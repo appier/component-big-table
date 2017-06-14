@@ -1,0 +1,119 @@
+
+.bt-row, .bt-rows, .bt-col, .bt-fixed-col, .bt-cell{
+  box-sizing: border-box;
+}
+
+.bt-cell{
+  position: relative;
+  background-color: #fff;
+}
+
+.bt-fixed-col-shadow{
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+  &.enable{
+    background: 0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQIHWPSkNeSBmJhTQVtbiDNCgASagIIuJX8OgAAAABJRU5ErkJggg==) repeat-y;
+  }
+}
+
+
+.bt-header-cell{
+  font-weight: bold;
+  .bt-header-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+    line-height: 1em;
+    margin: auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  &.sorted{
+    color: #4080ff;
+  }
+
+  .bt-sort-fn-wrap{
+    flex: 1;
+    cursor: pointer;
+    justify-content: space-between;
+
+    .sort-indicator{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      right: 6px;
+      width: 1em;
+      height: 1em;
+      .icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+      }
+    }
+  }
+
+  .bt-adjust-fn-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .bt-width-adjuster{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 4px;
+      z-index: 1;
+      cursor: ew-resize;
+      &:hover{
+        .bt-ind{
+          background-color: #0284ff;
+        }
+      }
+      .bt-ind{
+        margin-left: 2px;
+        width: 4px;
+        height: 100%;
+      }
+
+      .bt-bar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100vh;
+        background-color: #0284ff;
+      }
+
+    }
+  }
+
+}
+
+
+.bt-row{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.bt-fixed-col{
+  display: flex;
+}
+.bt-col{
+  display: flex;
+}
+.bt-cell{
+  display: block;
+}

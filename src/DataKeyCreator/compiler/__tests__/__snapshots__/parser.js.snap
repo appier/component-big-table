@@ -1,0 +1,331 @@
+exports[`Parser BinaryExpression: identifier 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "Identifier",
+        "value": "action",
+      },
+      "operator": "/",
+      "right": Object {
+        "type": "Identifier",
+        "value": "cost",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser BinaryExpression: number 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "NumberLiteral",
+        "value": "1",
+      },
+      "operator": "*",
+      "right": Object {
+        "type": "NumberLiteral",
+        "value": "2",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser BinaryExpression: operator should have precedence 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "NumberLiteral",
+        "value": "1",
+      },
+      "operator": "+",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "operator": "*",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "3",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser BinaryExpression: operator should have precedence 2 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "1",
+        },
+        "operator": "*",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "type": "BinaryExpression",
+      },
+      "operator": "+",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "3",
+        },
+        "operator": "*",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "4",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser BinaryExpression: operator should have precedence 3 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "1",
+        },
+        "operator": "+",
+        "right": Object {
+          "left": Object {
+            "type": "NumberLiteral",
+            "value": "2",
+          },
+          "operator": "*",
+          "right": Object {
+            "type": "NumberLiteral",
+            "value": "3",
+          },
+          "type": "BinaryExpression",
+        },
+        "type": "BinaryExpression",
+      },
+      "operator": "-",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "4",
+        },
+        "operator": "/",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "5",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser BinaryExpression: should able to chain 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "1",
+        },
+        "operator": "*",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "type": "BinaryExpression",
+      },
+      "operator": "*",
+      "right": Object {
+        "type": "NumberLiteral",
+        "value": "3",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser Parn Error: no close paren 1`] = `"Unmatched paren: it seems you lack a ) in expression"`;
+
+exports[`Parser Parn Error: no close paren 2`] = `"Unmatched paren: it seems you lack a ) in expression"`;
+
+exports[`Parser Parn Handling: basic 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "NumberLiteral",
+        "value": "1",
+      },
+      "operator": "+",
+      "right": Object {
+        "type": "NumberLiteral",
+        "value": "2",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser Parn Handling: nested paren 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "1",
+        },
+        "operator": "+",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "type": "BinaryExpression",
+      },
+      "operator": "+",
+      "right": Object {
+        "type": "NumberLiteral",
+        "value": "3",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser Parn Handling: nested paren 2 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "NumberLiteral",
+        "value": "1",
+      },
+      "operator": "+",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "operator": "+",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "3",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser Parn Handling: paren precedence 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "type": "NumberLiteral",
+        "value": "1",
+      },
+      "operator": "*",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "operator": "+",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "3",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser Parn Handling: paren precedence 2 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "left": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "1",
+        },
+        "operator": "+",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "type": "BinaryExpression",
+      },
+      "operator": "*",
+      "right": Object {
+        "left": Object {
+          "type": "NumberLiteral",
+          "value": "2",
+        },
+        "operator": "+",
+        "right": Object {
+          "type": "NumberLiteral",
+          "value": "3",
+        },
+        "type": "BinaryExpression",
+      },
+      "type": "BinaryExpression",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`Parser identifier 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "type": "Identifier",
+      "value": "cost",
+    },
+  ],
+  "type": "Program",
+}
+`;

@@ -1,0 +1,33 @@
+.bt-key-sorter {
+  .sort-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    .drag-pointer {
+      cursor: move;
+    }
+    &.dragging {
+      border: 1px dashed #0284ff;
+      background-color: transparent;
+      color: #0284ff;
+      .drag-pointer {
+        opacity: 0;
+      }
+    }
+    .name {
+      flex: 1;
+    }
+    .remove-icon {
+      color: #999;
+      margin-right: 4px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      line-height: 1;
+      cursor: pointer;
+    }
+  }
+}
