@@ -374,12 +374,8 @@ And open storybook with browser: http://localhost:9001/
 $ npm publish
 ```
 
-## Todo
+## LICENSE
 
-DataKeyCreator:
 
-for dev
+MIT
 
-```js
-babel-node src/DataKeyCreator/compiler/index.js
-```
