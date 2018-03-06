@@ -7,7 +7,7 @@
   "npmName": "big-table",
   "repository": {
     "type": "git",
-    "url": "https://github.com/appier/component-big-table",
+    "url": "https://github.com/appier/component-big-table"
   },
   "bugs": {
     "url": "https://github.com/appier/component-big-table/issues"
@@ -15,7 +15,7 @@
   "author": "cyli <cyli@appier.com>",
   "contributors": [
     "Archie Lee <archielee@appier.com>",
-    "Jenny Liang <jennyliang@appier.com>",
+    "Jenny Liang <jennyliang@appier.com>"
   ],
   "scripts": {
     "build:clean": "rm -rf lib example build",
