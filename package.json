@@ -1,9 +1,11 @@
 {
   "name": "big-table",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Big Table Component",
+  "license": "MIT",
   "main": "build/big-table.js",
   "npmName": "big-table",
+  "repository": "https://github.com/appier/component-big-table",
   "scripts": {
     "build:clean": "rm -rf lib example build",
     "build": "npm run build:clean && webpack --config webpack.config.babel.js",
@@ -46,13 +48,13 @@
     "jest": "^19.0.2",
     "postcss-loader": "^1.3.3",
     "postcss-nested": "^1.0.0",
-    "react-dom": "^15.5.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "classnames": "^2.2.5",
     "immutable": "^3.8.1",
-    "react": "^15.5.3"
+    "react": "^15.5.3 || ^16",
+    "react-dom": "^15.5.3 || ^16"
   }
 }

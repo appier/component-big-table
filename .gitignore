@@ -3,3 +3,5 @@ build
 logs
 node_modules
 .DS_Store
+stats.json
+.vscode/
