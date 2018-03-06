@@ -1,3 +1,6 @@
+# 1.2.0
+
+* First public package: `npm install big-table` or `yarn add big-table`
 
 # 1.1.2
 
