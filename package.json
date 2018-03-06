@@ -23,7 +23,7 @@
     "storybook-build": "rm -rf ./build_storybook && build-storybook -o build_storybook",
     "storybook-start": "start-storybook -p 9001",
     "storybook-test": "storyshots",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "start": "npm run storybook-start",
     "test": "jest",
     "jest:watch": "jest --watch",
